@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "Product.Logik/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Product.Logik.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Product.Logik.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Product.Logik/1.0.0": {
+      "type": "project",
+      "path": "../Product.logek/Product.Logik.csproj",
+      "msbuildProject": "../Product.logek/Product.Logik.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "Product.Logik >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\1\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\навчання\\2 Курс\\2 Семестир\\Конструювання програмного забезпечення\\lab\\Labskpz\\lab-1\\Product\\Product.logek\\Product.Logik.csproj": {
+              "projectPath": "C:\\навчання\\2 Курс\\2 Семестир\\Конструювання програмного забезпечення\\lab\\Labskpz\\lab-1\\Product\\Product.logek\\Product.Logik.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
