@@ -1,7 +1,8 @@
 ﻿namespace FactorySubscription
 {
-    public class Class1
+    public abstract class CreatorSubscription
     {
+        public abstract ISubscription CreateSubscription();
 
     }
 }

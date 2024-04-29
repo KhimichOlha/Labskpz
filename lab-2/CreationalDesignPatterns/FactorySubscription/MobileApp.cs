@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FactorySubscription
 {
-    internal class MobileApp
+    public class MobileApp : CreatorSubscription
     {
+        public override ISubscription CreateSubscription()
+        {
+            return new DomesticSubscription();
+        }
     }
 }

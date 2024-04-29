@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace DeviceFactoryLogic
 {
-    internal class EBook
+    public class EBook : Device
     {
+        public EBook(string brand)
+        {
+            Brand = brand;
+
+        }
+        public override string Doing()
+        {
+            return $"I am ebook of {Brand}";
+        }
     }
 }

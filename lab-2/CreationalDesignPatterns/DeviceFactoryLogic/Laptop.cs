@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace DeviceFactoryLogic
 {
-    internal class Laptop
+    public class Laptop : Device
     {
+        public Laptop(string brand)
+        {
+            Brand = brand;
+
+        }
+        public override string Doing()
+        {
+            return $"I am {Brand}. I give opotunites of development";
+        }
     }
 }

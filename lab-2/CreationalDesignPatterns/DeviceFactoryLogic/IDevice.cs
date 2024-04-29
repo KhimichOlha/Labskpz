@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace DeviceFactoryLogic
 {
-    internal interface IDevice
+    public interface IDevice
     {
+        public Laptop CreateLaptop();
+        public Netbook CreateNetbook();
+        public EBook CreateEBook();
+        public Smartphone CreateSmartphone();
+
     }
 }

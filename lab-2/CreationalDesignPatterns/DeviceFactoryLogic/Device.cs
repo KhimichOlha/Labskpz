@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DeviceFactoryLogic
 {
-    internal class Device
+    public abstract class Device
     {
+        public string Brand { get; protected set; }
+        public abstract string Doing();
+
     }
 }

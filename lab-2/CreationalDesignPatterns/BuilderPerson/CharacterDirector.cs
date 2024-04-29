@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace BuilderPerson
 {
-    internal class CharacterDirector
+    public class CharacterDirector
     {
+        private readonly ICharacterBuilder _characterBuilder;
+        public CharacterDirector(ICharacterBuilder character)
+        {
+            _characterBuilder = character;
+
+        }
+        public Character Constrat()
+        {
+            return _characterBuilder.SetHeight(170).SetBuild("Злодій").SetClothing("Плащ").SetHairColor("чорний").SetInventory(new List<string> { "Палочка чарівна", "маска" }).Build();
+        }
     }
 }

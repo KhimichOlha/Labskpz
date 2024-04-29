@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FactorySubscription
 {
-    internal interface ISubscription
+    public interface ISubscription
     {
+        public decimal MonthlyFee { get; protected set; }
+        public int MinSubscriptionMonths { get; protected set; }
+        public List<string> Channels { get; protected set; }
+
     }
 }

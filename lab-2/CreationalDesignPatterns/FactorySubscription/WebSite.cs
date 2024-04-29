@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FactorySubscription
 {
-    internal class WebSite
+    public class WebSite : CreatorSubscription
     {
+        public override ISubscription CreateSubscription()
+        {
+            return new EducationalSubscription();
+        }
     }
 }

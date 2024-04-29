@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace FactorySubscription
 {
-    internal class ManagerCall
+    public class ManagerCall : CreatorSubscription
     {
+        public override ISubscription CreateSubscription()
+        {
+            return new PremiumSubscription();
+        }
+
     }
 }
