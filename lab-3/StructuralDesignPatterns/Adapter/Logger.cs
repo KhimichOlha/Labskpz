@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace Adapter
 {
-    internal class Logger
+    public class Logger
     {
+        public void Log(string message) 
+        {
+            Console.ResetColor();
+            Console.WriteLine(message);
+            
+        }
+        public void Error(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            Console.ResetColor();
+
+        }
+
     }
 }

@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Adapter
 {
-    public interface IFileWriter
+    internal class FileLoggerAdapter
     {
-        void Write(string message);
-        void WriteLine(string message);
     }
 }
