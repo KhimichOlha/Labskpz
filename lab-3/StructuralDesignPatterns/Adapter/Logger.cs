@@ -21,6 +21,12 @@ namespace Adapter
             Console.ResetColor();
 
         }
+        public void Warn(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
 
     }
 }
