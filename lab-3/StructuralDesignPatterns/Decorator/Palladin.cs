@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    internal class Palladin
+    public class Palladin : Hero
     {
+        public override string Type()
+        {
+            return "Palladin";
+        }
     }
 }

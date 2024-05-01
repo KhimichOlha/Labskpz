@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Adapter\Adapter.csproj" />
+    <ProjectReference Include="..\Decorator\Decorator.csproj" />
   </ItemGroup>
 
 </Project>

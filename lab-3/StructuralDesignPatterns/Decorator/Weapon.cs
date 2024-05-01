@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    internal class Weapon
+    public class Weapon : InventoryDecorator
     {
+        public Weapon(IInventory inventory) : base(inventory) { }
+        public override void Equip()
+        {
+            Console.WriteLine("Equipping weapon");
+            if (_inventory != null)
+            {
+                _inventory.Equip();
+            }
+        }
+        
     }
 }

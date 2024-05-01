@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    internal class InventoryDecorator
+    public abstract class InventoryDecorator : IInventory
     {
+        protected IInventory _inventory;
+        public InventoryDecorator(IInventory inventory)
+        {
+            _inventory = inventory;
+        }
+        public abstract void Equip();
+
     }
 }

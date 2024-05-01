@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    internal class Artifact
+    public class Artifact : InventoryDecorator
     {
+        public Artifact(IInventory inventory) : base(inventory) { }
+        public override void Equip()
+        {
+            Console.WriteLine("Equipping artifact");
+            if (_inventory != null)
+            {
+                _inventory.Equip();
+
+            }
+               
+        }
     }
 }

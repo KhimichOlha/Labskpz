@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Decorator
 {
-    internal interface IInventory
+    public interface IInventory
     {
+        void Equip();
     }
+
 }
