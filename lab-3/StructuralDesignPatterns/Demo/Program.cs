@@ -1,4 +1,5 @@
 ﻿using Adapter;
+using Bridge;
 using Decorator;
 
 namespace Demo
@@ -8,8 +9,10 @@ namespace Demo
         static void Main(string[] args)
         {
             //DemoAdapter();
-            DemoDecorator();
+           // DemoDecorator();
+            DemoBridge();
         }
+
         static void DemoAdapter()
         {
             FileWriter fileWriter = new FileWriter("log.txt");
@@ -44,6 +47,18 @@ namespace Demo
 
 
 
+
+        }
+        static void DemoBridge()
+        {
+            IRenderer vectorRenderer = new VectorRenderer();
+            IRenderer rasterRenderer = new RasterRenderer();
+            Shape circle = new Circle(vectorRenderer);
+            Shape square = new Square(vectorRenderer);
+            Shape triangle = new Triangle(rasterRenderer);
+            circle.Draw();
+            square.Draw();
+            triangle.Draw();
 
         }
     }

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Bridge
 {
-    internal interface IRenderer
+    public interface IRenderer
     {
+        public void Render(Shape shape);
+
     }
 }

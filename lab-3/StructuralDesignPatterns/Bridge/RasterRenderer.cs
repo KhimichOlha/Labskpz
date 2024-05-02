@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Bridge
 {
-    internal class RasterRenderer
+    public class RasterRenderer : IRenderer
     {
+        public void Render(Shape shape)
+        {
+            Console.WriteLine($"Drawing {shape.GetType()} as pixel");
+        }
     }
 }
