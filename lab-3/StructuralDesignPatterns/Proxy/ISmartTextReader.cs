@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Proxy
 {
-    internal class ISmartTextReader
+    public interface ISmartTextReader
     {
+        char[][] ReadText(string filePath);
+
     }
 }

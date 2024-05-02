@@ -1,6 +1,7 @@
 ﻿using Adapter;
 using Bridge;
 using Decorator;
+using Proxy;
 
 namespace Demo
 {
@@ -9,8 +10,9 @@ namespace Demo
         static void Main(string[] args)
         {
             //DemoAdapter();
-           // DemoDecorator();
-            DemoBridge();
+            // DemoDecorator();
+            // DemoBridge();
+            DemoProxy();
         }
 
         static void DemoAdapter()
@@ -60,6 +62,14 @@ namespace Demo
             square.Draw();
             triangle.Draw();
 
+        }
+        static void DemoProxy()
+        {
+            ISmartTextReader smartTextReader = new SmartTextReader();
+            ISmartTextReader textChecker = new SmartTextChecker(smartTextReader);
+            ISmartTextReader lockertext = new SmartTextReaderLocker(textChecker, @"\.txt$");
+            var reth1 = lockertext.ReadText("text1.txt");
+            var reth2 = lockertext.ReadText("textFile1.html");
         }
     }
 }
