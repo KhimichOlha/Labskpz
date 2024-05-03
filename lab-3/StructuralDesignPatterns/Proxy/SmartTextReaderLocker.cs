@@ -21,12 +21,12 @@ namespace Proxy
         {
             if (_regex.IsMatch(filePath))
             {
-                Console.WriteLine("Access denied!");
-                return null;
+                return _reader.ReadText(filePath);
             }
             else
-            {
-                return _reader.ReadText(filePath);
+            {  
+                Console.WriteLine("Access denied!");
+                return null;
             }
         }
     }
