@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Composer
 {
-    internal class LightTextNode
+    public class LightTextNode : LightNode
     {
+        public string Text { get; init; }
+        public  LightTextNode (string text)
+        {
+            Text = text;
+        }
+        public override string OuterHTML => Text;
+
+        public override string InnerHTML => Text;
     }
 }

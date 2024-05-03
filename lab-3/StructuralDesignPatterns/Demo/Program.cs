@@ -1,5 +1,6 @@
 ﻿using Adapter;
 using Bridge;
+using Composer;
 using Decorator;
 using Proxy;
 
@@ -12,7 +13,8 @@ namespace Demo
             //DemoAdapter();
             // DemoDecorator();
             // DemoBridge();
-            DemoProxy();
+            //DemoProxy();
+            DemoComposite();
         }
 
         static void DemoAdapter()
@@ -70,6 +72,19 @@ namespace Demo
             ISmartTextReader lockertext = new SmartTextReaderLocker(textChecker, @"\.txt$");
             var reth1 = lockertext.ReadText("text1.txt");
             var reth2 = lockertext.ReadText("textFile1.html");
+        }
+        static void DemoComposite()
+        {
+            var div = new LightElementNode("div", true, false, new List<string> { "container" }, new List<LightNode>
+        {
+            new LightTextNode("Hello, "),
+            new LightElementNode("span", false, false, new List<string> { "highlight" }, new List<LightNode>
+            {
+                new LightTextNode("world!")
+            })
+        });
+
+            Console.WriteLine(div.OuterHTML);
         }
     }
 }

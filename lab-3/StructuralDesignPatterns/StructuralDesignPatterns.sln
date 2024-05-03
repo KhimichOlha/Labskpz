@@ -5,13 +5,15 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{1F1B2B0A-1F66-4DF9-883D-D9679DECE443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{64C36F7D-F6EC-4043-A4BD-FAF9B493E97B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo", "Demo\Demo.csproj", "{64C36F7D-F6EC-4043-A4BD-FAF9B493E97B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Decorator", "Decorator\Decorator.csproj", "{D4CC48A1-EE83-407C-9088-E288BFE38BDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{D4CC48A1-EE83-407C-9088-E288BFE38BDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{D5407B31-50BF-4886-849A-C0AFD0B987FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bridge", "Bridge\Bridge.csproj", "{D5407B31-50BF-4886-849A-C0AFD0B987FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{0A955BBE-8E59-4A59-ABC1-C256AF7363DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proxy", "Proxy\Proxy.csproj", "{0A955BBE-8E59-4A59-ABC1-C256AF7363DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composer", "Composer\Composer.csproj", "{3A658F33-A971-4EC1-BF11-BD497D80676B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0A955BBE-8E59-4A59-ABC1-C256AF7363DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A955BBE-8E59-4A59-ABC1-C256AF7363DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A955BBE-8E59-4A59-ABC1-C256AF7363DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A658F33-A971-4EC1-BF11-BD497D80676B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A658F33-A971-4EC1-BF11-BD497D80676B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A658F33-A971-4EC1-BF11-BD497D80676B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A658F33-A971-4EC1-BF11-BD497D80676B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
