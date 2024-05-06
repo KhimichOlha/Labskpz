@@ -12,7 +12,7 @@ namespace Composer
         public bool IsBlock { get; }
         public bool IsSelfClosing { get; }
         public List<string> CssClasses { get; }
-        public List<LightNode> Children { get; }
+        public List<LightNode> Children { get; set; }
         public LightElementNode (string tagName, bool isBlock, bool isSelfClosing, List<string> cssClasses, List<LightNode> children)
         {
             TagName = tagName;

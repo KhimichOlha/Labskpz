@@ -8,7 +8,7 @@ namespace Composer
 {
     public class LightTextNode : LightNode
     {
-        public string Text { get; init; }
+        public string Text { get; set; }
         public  LightTextNode (string text)
         {
             Text = text;
