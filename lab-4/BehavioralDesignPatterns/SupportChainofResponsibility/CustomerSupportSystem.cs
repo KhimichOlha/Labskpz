@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace SupportChainofResponsibility
 {
-    public interface IHandler
+    internal class CustomerSupportSystem
     {
-        IHandler SetNext(IHandler handler);
-        void Hendl(int request);
-
     }
 }

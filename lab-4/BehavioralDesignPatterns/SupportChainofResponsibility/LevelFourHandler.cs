@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace SupportChainofResponsibility
 {
-    internal class LevelFourHandler
+    public class LevelFourHandler : SupportHandler
     {
+        public override void Hendl(int request)
+        {
+            if (request == 4)
+            {
+                Console.WriteLine("4 ваш баланс складає 100 грн");
+            }
+            else
+            {
+                base.Hendl(request);
+            }
+
+        }
     }
 }

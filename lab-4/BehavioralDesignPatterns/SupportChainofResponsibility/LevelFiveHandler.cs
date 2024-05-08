@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace SupportChainofResponsibility
 {
-    public class LevelTwoHandler :SupportHandler
+    public class LevelFiveHandler : SupportHandler 
     {
         public override void Hendl(int request)
         {
-            if (request == 2)
+            if (request == 5)
             {
-                Console.WriteLine("2 інформація про ваш баланс або тариф");
+                Console.WriteLine("5 ваш баланс поповнено");
             }
             else
             {
