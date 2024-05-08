@@ -24,10 +24,10 @@ namespace SupportChainofResponsibility
             Console.WriteLine("Дщброго вечора це ваша система підтримки");
             while (true)
             {
-                Console.WriteLine("Ведіть від 1 до 4. 1 інформація про ваш номер. 2 інформація про ваш баланс або тариф." +
+                Console.WriteLine("Ведіть від 1 до 5. 1 інформація про ваш номер. 2 інформація про ваш баланс або тариф." +
                     " 3 Перевірка або поповнення балансу.4 Перевірка балансу. 5 Поповнення балансу. 0 для виходу ");
                 int level;
-                if (!int.TryParse(Console.ReadLine(), out level)||  level < 0||  level > 4)
+                if (!int.TryParse(Console.ReadLine(), out level)||  level < 0||  level > 5)
                 {
                     Console.WriteLine("Неправельний ввід. Повторіть спробу.");
                     continue;
