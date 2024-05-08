@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SupportChainofResponsibility
 {
-    internal interface ISupportHandler
+    public abstract class SupportHandler :IHandler
     {
+
     }
 }
