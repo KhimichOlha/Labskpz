@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace Composer
 {
-    public class LightElementNode : LightNode
+    public class LightElementNode : LightNode, ISubject
     {
+        private List<IObserver> observers = new List<IObserver>();
         public string TagName { get; }
         public bool IsBlock { get; }
         public bool IsSelfClosing { get; }
@@ -80,6 +77,25 @@ namespace Composer
                 }
                 return html .ToString ();
 
+            }
+        }
+
+        public void Attach(IObserver observer)
+        {
+            observers.Add(observer);
+
+        }
+
+        public void Detach(IObserver observer)
+        {
+            observers.Remove(observer);
+        }
+
+        public void Notify(string eventType, object eventData)
+        {
+            foreach (var observer in observers)
+            {
+                observer.Update(eventType, eventData);
             }
         }
     }

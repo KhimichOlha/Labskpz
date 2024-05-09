@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Composer
 {
-    internal interface IObserver
+    public interface IObserver
     {
+        void Update(string eventType, object eventData);
+
     }
 }
