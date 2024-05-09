@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Mediator
 {
-    internal interface ICommandCentre
+    public interface ICommandCentre
     {
+        void RequestLanding(Aircraft aircraft);
+        void RequestTakeOff(Aircraft aircraft);
+
     }
 }
