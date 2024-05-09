@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 
 namespace Composer.Strategy
 {
-    internal class NetworkImageLoadingStrategy
+    public class NetworkImageLoadingStrategy : IImageLoadingStrategy
     {
+
+        public byte[] LoadImage(string path)
+        {
+            using(var client = new WebClient())
+            {
+                return client.DownloadData(path);
+            }
+        }
     }
 }

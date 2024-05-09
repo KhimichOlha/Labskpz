@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Composer.Strategy
 {
-    internal interface IImageLoadingStrategy
+    public interface IImageLoadingStrategy
     {
+        byte[] LoadImage(string path);
     }
 }

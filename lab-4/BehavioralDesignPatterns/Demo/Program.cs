@@ -1,4 +1,5 @@
 ﻿using Composer;
+using Composer.Strategy;
 using Mediator;
 using SupportChainofResponsibility;
 using System.Net.Http.Headers;
@@ -11,7 +12,8 @@ namespace Demo
         {
             //DemoSupport();
             // DemoMediator();
-            DemoObserver();
+            // DemoObserver();
+            Demostrategy();
 
         }
         static void DemoSupport()
@@ -36,6 +38,28 @@ namespace Demo
             EventListener click = new EventListener("click", (data) => Console.WriteLine("button clicked"));
             button.Attach(click);
             button.Notify("click", null);
+        }
+        static void Demostrategy()
+        {
+            IImageLoadingStrategy fileSystemStrategy = new FileSystemImageLoadingStrategy();
+            ImageElementNode fileSystemImageNode = new ImageElementNode("photo_2024-03-04_19-21-05.jpg", fileSystemStrategy);
+
+            
+            byte[] fileSystemImageData = fileSystemImageNode.ImageData();
+            Console.WriteLine($"File system image loaded. Image data length: {fileSystemImageData.Length}");
+
+            
+            IImageLoadingStrategy networkStrategy = new NetworkImageLoadingStrategy();
+            ImageElementNode networkImageNode = new ImageElementNode("https://img.freepik.com/free-photo/beautiful-kitten-with-colorful-clouds_23-2150752964.jpg", networkStrategy);
+
+            
+            byte[] networkImageData = networkImageNode.ImageData();
+            Console.WriteLine($"Network image loaded. Image data length: {networkImageData.Length}");
+
+          
+
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
     }
 }
