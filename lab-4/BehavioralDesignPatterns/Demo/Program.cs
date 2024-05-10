@@ -2,6 +2,7 @@
 using Composer.Strategy;
 using Mediator;
 using SupportChainofResponsibility;
+using Memento;
 using System.Net.Http.Headers;
 
 namespace Demo
@@ -13,7 +14,8 @@ namespace Demo
             //DemoSupport();
             // DemoMediator();
             // DemoObserver();
-            Demostrategy();
+            //Demostrategy();
+            DemoMemento();
 
         }
         static void DemoSupport()
@@ -60,6 +62,16 @@ namespace Demo
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
+        }
+        static void DemoMemento()
+        {
+            
+            TextEditor textEditor = new TextEditor();
+            textEditor.CreatDocument("Dашого LightHTML з завдання");
+            textEditor.SaveChanges("Покажіть скільки займає все дерево");
+            textEditor.Print();
+            textEditor.UndoChanges();
+            textEditor.Print();
         }
     }
 }

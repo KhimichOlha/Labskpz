@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Composer\Composer.csproj" />
     <ProjectReference Include="..\Mediator\Mediator.csproj" />
+    <ProjectReference Include="..\Memento\Memento.csproj" />
     <ProjectReference Include="..\SupportChainofResponsibility\SupportChainofResponsibility.csproj" />
   </ItemGroup>
 
