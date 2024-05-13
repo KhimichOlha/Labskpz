@@ -1,7 +1,8 @@
 ﻿namespace LightHTML
 {
-    public class Class1
+    public abstract class LightNode
     {
-
+        public abstract string OuterHTML { get; }
+        public abstract string InnerHTML { get; }
     }
 }
