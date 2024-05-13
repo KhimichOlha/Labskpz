@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-</Project>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LightHTML\LightHTML.csproj" />
+  </ItemGroup>
+
+
+
