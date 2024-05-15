@@ -5,11 +5,11 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightHtml", "LightHtml\LightHtml.csproj", "{72874D96-75A6-4702-B58B-A3CF625405ED}"
 EndProject
-
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandHTML", "CommandHTML\CommandHTML.csproj", "{1AAB43B2-169E-4CBB-9EAE-99C4810DAB95}"
-
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightHTMLIterator", "LightHTMLIterator\LightHTMLIterator.csproj", "{0144FF3E-4B6B-4736-A0BB-7BADEB41160F}"
-
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandHTML", "CommandHTML\CommandHTML.csproj", "{1AAB43B2-169E-4CBB-9EAE-99C4810DAB95}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightHTMLIterator", "LightHTMLIterator\LightHTMLIterator.csproj", "{0144FF3E-4B6B-4736-A0BB-7BADEB41160F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StateHTML", "StateHTML\StateHTML.csproj", "{922AAB08-D8F6-4349-9A0E-D1F47F0EAFAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,17 +21,18 @@ Global
 		{72874D96-75A6-4702-B58B-A3CF625405ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72874D96-75A6-4702-B58B-A3CF625405ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72874D96-75A6-4702-B58B-A3CF625405ED}.Release|Any CPU.Build.0 = Release|Any CPU
-
 		{1AAB43B2-169E-4CBB-9EAE-99C4810DAB95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1AAB43B2-169E-4CBB-9EAE-99C4810DAB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AAB43B2-169E-4CBB-9EAE-99C4810DAB95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AAB43B2-169E-4CBB-9EAE-99C4810DAB95}.Release|Any CPU.Build.0 = Release|Any CPU
-
 		{0144FF3E-4B6B-4736-A0BB-7BADEB41160F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0144FF3E-4B6B-4736-A0BB-7BADEB41160F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0144FF3E-4B6B-4736-A0BB-7BADEB41160F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0144FF3E-4B6B-4736-A0BB-7BADEB41160F}.Release|Any CPU.Build.0 = Release|Any CPU
-
+		{922AAB08-D8F6-4349-9A0E-D1F47F0EAFAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922AAB08-D8F6-4349-9A0E-D1F47F0EAFAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922AAB08-D8F6-4349-9A0E-D1F47F0EAFAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922AAB08-D8F6-4349-9A0E-D1F47F0EAFAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
