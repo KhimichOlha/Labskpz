@@ -1,4 +1,7 @@
-﻿namespace LightHTMLLiterator
+﻿using LightHTML;
+using System.Collections;
+
+namespace LightHTMLLiterator
 {
     public class HtmlDocument : IEnumerable<LightNode>
     {
