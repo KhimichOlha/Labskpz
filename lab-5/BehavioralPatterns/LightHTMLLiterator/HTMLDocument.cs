@@ -1,21 +1,7 @@
 ﻿namespace LightHTMLLiterator
 {
-    public class HtmlDocument : IEnumerable<LightNode>
+    public class Class1
     {
-        private LightNode _root;
 
-        public HtmlDocument(LightNode root)
-        {
-            _root = root;
-        }
-
-        public IEnumerator<LightNode> GetEnumerator()
-        {
-            return new HtmlDocumentIterator(_root);
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
     }
+}
