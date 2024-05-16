@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LightHTMLIterator", "LightH
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateHTML", "StateHTML\StateHTML.csproj", "{922AAB08-D8F6-4349-9A0E-D1F47F0EAFAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethodHTML", "TemplateMethodHTML\TemplateMethodHTML.csproj", "{F9C2A22A-ACFA-48A9-B5FD-86B8FC08995E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateMethodHTML", "TemplateMethodHTML\TemplateMethodHTML.csproj", "{F9C2A22A-ACFA-48A9-B5FD-86B8FC08995E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorHTML", "VisitorHTML\VisitorHTML.csproj", "{681CCCD2-AB63-4609-B52A-D8D4D564DDFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F9C2A22A-ACFA-48A9-B5FD-86B8FC08995E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9C2A22A-ACFA-48A9-B5FD-86B8FC08995E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9C2A22A-ACFA-48A9-B5FD-86B8FC08995E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{681CCCD2-AB63-4609-B52A-D8D4D564DDFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{681CCCD2-AB63-4609-B52A-D8D4D564DDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{681CCCD2-AB63-4609-B52A-D8D4D564DDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{681CCCD2-AB63-4609-B52A-D8D4D564DDFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
